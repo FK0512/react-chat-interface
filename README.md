@@ -40,7 +40,7 @@ git clone https://github.com/FK0512/react-chat-interface.git
 
 Navigate to the project directory:
 
-cd chat-app
+cd react-chat-interface
 
 Install dependencies:
 
@@ -86,17 +86,13 @@ Fetches responses asynchronously.
 
 Displays user and assistant messages.
 
-Dashboard.js
-
 Renders the Sidebar on the left and Chat on the right.
 
 Uses inline styling to arrange the layout in a flex row.
 
-License
 
-This project is licensed under the MIT License.
 
 Author
 
-Developed by [Your Name].
+Developed by Fiza khan.
 
