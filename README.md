@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+Chat Application with Sidebar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
 
-## Available Scripts
+This is a simple chat application with a sidebar for managing chat history. The sidebar is positioned on the left, and the chat interface appears on the right. The application supports multiple conversations and displays markdown-formatted messages.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Sidebar for chat history navigation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Chat interface that supports markdown rendering.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dynamic chat handling with user and assistant messages.
 
-### `npm test`
+Option to start a new chat.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Uses inline styling to position elements.
 
-### `npm run build`
+Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+├── src
+│   ├── components
+│   │   ├── Sidebar.js
+│   │   ├── Chat.js
+│   │   ├── Message.js
+│   │   ├── Dashboard.js
+│   │   ├── api.js
+│   ├── styles
+│   │   ├── Chat.css
+│   │   ├── Sidebar.css
+│   ├── App.js
+│   ├── index.js
+│   ├── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
 
-### `npm run eject`
+git clone https://github.com/FK0512/react-chat-interface.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Navigate to the project directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd chat-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Usage
 
-### Code Splitting
+Open the application in your browser at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Use the sidebar to switch between conversations.
 
-### Analyzing the Bundle Size
+Type messages in the input box and send them.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Start a new chat session using the "New Chat" button.
 
-### Making a Progressive Web App
+Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React.js
 
-### Advanced Configuration
+React Markdown
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Remark GFM
 
-### Deployment
+CSS (for styling)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Components
 
-### `npm run build` fails to minify
+Sidebar.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Displays a list of chat histories.
+
+Allows switching between different conversations.
+
+Chat.js
+
+Handles message input and rendering.
+
+Fetches responses asynchronously.
+
+Displays user and assistant messages.
+
+Dashboard.js
+
+Renders the Sidebar on the left and Chat on the right.
+
+Uses inline styling to arrange the layout in a flex row.
+
+License
+
+This project is licensed under the MIT License.
+
+Author
+
+Developed by [Your Name].
+

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Chat from "./components/Chat";
+import Sidebar from "./components/Sidebar";
+import "./styles.css";
 
-function App() {
+const App = () => {
+  const [conversations, setConversations] = useState([[]]);
+  const [activeChat, setActiveChat] = useState(0);
+
+  // Ensure activeChat is always in range
+  useEffect(() => {
+    if (activeChat >= conversations.length) {
+      setActiveChat(0);
+    }
+  }, [conversations]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Sidebar chats={conversations} selectChat={setActiveChat} currentChatIndex={activeChat} />
+      <Chat conversations={conversations} setConversations={setConversations} activeChat={activeChat} />
     </div>
   );
-}
+};
 
 export default App;
