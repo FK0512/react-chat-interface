@@ -1,5 +1,5 @@
 const API_URL = "https://openrouter.ai/api/v1/chat/completions"; // OpenRouter API Endpoint
-const API_KEY = "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"; // Replace with your OpenRouter API Key
+const API_KEY = "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"; // Replace with your OpenRouter API Key
 
 export const fetchChatResponse = async (messages) => {
   try {
