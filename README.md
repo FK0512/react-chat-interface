@@ -52,7 +52,7 @@ cd react-chat-interface
 ```
 ## set up environment variables.create.env file
 ```bash
-REACT_APP_API_KEY=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
+REACT_APP_API_KEY=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
 ```
 ```bash
 replace REACT_APP_API_KEY in .env and api.js file .replace this for the chatbot to work otherwise it will not work.
