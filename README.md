@@ -1,5 +1,5 @@
 
-# reac-chat-interface
+# react-chat-interface
 
 A modern, fully functional chat interface built with React
 
@@ -24,7 +24,7 @@ This project is a ChatGPT-like chat interface built using React. It supports Mar
 
 🚫 No Authentication Required – Instant access with a seamless experience.
 
-🎨 Modern Styling – Built with TailwindCSS for a responsive UI.
+🎨 Modern Styling – Built with CSS for a responsive UI.
 ## 🛠️ Tech Stack
 1.React (with functional components and hooks)
 
